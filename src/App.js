@@ -21,12 +21,16 @@ class App extends Component {
     //create request here
     axios.get('/api/messages')
     .then( res => {
-      this.setState({ allMessages: res.data })
-    })
+      this.setState({ allMessages: res.data });
+    });
   }
 
   createMessage() {
     //create request here
+    axios.post('/api/message', { username: this.state.username, message: this.state.message })
+    .then ( res => {
+      this.setState({ allMessages: res.data });
+    });
   }
   
 
