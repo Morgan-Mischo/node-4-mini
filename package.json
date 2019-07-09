@@ -6,6 +6,7 @@
     "axios": "^0.18.0",
     "dotenv": "^8.0.0",
     "express": "^4.17.1",
+    "express-session": "^1.16.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
@@ -16,6 +17,6 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3005", 
+  "proxy": "http://localhost:3005",
   "main": "server/index.js"
 }
